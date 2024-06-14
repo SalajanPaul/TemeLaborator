@@ -8,7 +8,7 @@ public class GeometricFigures extends JFrame {
     private JToggleButton rectangleButton;
     private JToggleButton freeformButton;
     private JButton colorButton;
-    private JButton deleteButton; // Added delete button
+    private JButton deleteButton;
     private Color currentColor = Color.BLACK;
     private CustomShapePanel shapePanel;
 
