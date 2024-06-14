@@ -25,7 +25,7 @@ public class GeometricFigures extends JFrame {
         rectangleButton = new JToggleButton("Rectangle");
         freeformButton = new JToggleButton("Mouse drag");
         colorButton = new JButton("Color");
-        deleteButton = new JButton("Delete"); // Initialize delete button
+        deleteButton = new JButton("Delete");
 
         ButtonGroup group = new ButtonGroup();
         group.add(circleButton);
@@ -36,7 +36,7 @@ public class GeometricFigures extends JFrame {
         controlPanel.add(rectangleButton);
         controlPanel.add(freeformButton);
         controlPanel.add(colorButton);
-        controlPanel.add(deleteButton); // Add delete button to control panel
+        controlPanel.add(deleteButton);
 
         colorButton.addActionListener(e -> {
             Color newColor = JColorChooser.showDialog(this, "Choose a color", currentColor);
@@ -46,7 +46,7 @@ public class GeometricFigures extends JFrame {
         });
 
         deleteButton.addActionListener(e -> {
-            shapePanel.clearShapes(); // Clear all shapes
+            shapePanel.clearShapes();
         });
 
         shapePanel = new CustomShapePanel();
